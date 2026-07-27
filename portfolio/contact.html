@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact // Skyfall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="terminal-window">
+  <div class="titlebar">
+    <span class="dots">
+      <span class="dot dot--green" title="build: passing"></span>
+      <span class="dot dot--amber" title="ci: running"></span>
+      <span class="dot dot--dim" title="deploys: idle"></span>
+    </span>
+    <span class="path">skyfall — bash — 80×24</span>
+    <span class="status">● online</span>
+  </div>
+</div>
+
+<nav class="shell-nav" aria-label="Primary">
+  <a href="index.html">home</a>
+  <a href="projects.html">projects</a>
+  <a href="about.html">about</a>
+  <a href="contact.html" aria-current="page">contact</a>
+</nav>
+
+<main>
+  <p class="prompt-line">
+    <span class="user">guest</span><span class="at">@</span><span class="host">skyfall</span><span class="cwd">:~$</span>
+    <span class="cmd">finger skyfall</span>
+  </p>
+  <h1>Contact<span class="caret"></span></h1>
+  <p class="lede">Reach out about internships, freelance work, or anything on the projects page.</p>
+
+  <h2>reach me</h2>
+  <div class="log-item">
+    <span class="hash">email</span>
+    <span class="msg"><a href="mailto:your.email@example.com">your.email@example.com</a></span>
+    <span class="date comment">fastest</span>
+  </div>
+  <div class="log-item">
+    <span class="hash">github</span>
+    <span class="msg"><a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></span>
+    <span class="date comment">code</span>
+  </div>
+  <div class="log-item">
+    <span class="hash">linkedin</span>
+    <span class="msg"><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">linkedin.com/in/your-username</a></span>
+    <span class="date comment">work</span>
+  </div>
+
+  <h2>or drop a line</h2>
+  <p class="comment" style="font-size:12.5px; margin-bottom:16px;">
+    // static page — this form opens your email client, it doesn't submit anywhere on its own
+  </p>
+  <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+    <div class="field">
+      <label for="name">name</label>
+      <input id="name" name="name" type="text" required>
+    </div>
+    <div class="field">
+      <label for="email">email</label>
+      <input id="email" name="email" type="email" required>
+    </div>
+    <div class="field">
+      <label for="message">message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button class="btn" type="submit" style="font-family: var(--mono); cursor: pointer;">./send</button>
+  </form>
+</main>
+
+<footer>
+  <span>Harare, Zimbabwe</span>
+  <span class="comment">// swap in your real email / handles above</span>
+</footer>
+
+</body>
+</html>

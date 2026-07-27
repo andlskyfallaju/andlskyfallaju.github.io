@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects // Skyfall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="terminal-window">
+  <div class="titlebar">
+    <span class="dots">
+      <span class="dot dot--green" title="build: passing"></span>
+      <span class="dot dot--amber" title="ci: running"></span>
+      <span class="dot dot--dim" title="deploys: idle"></span>
+    </span>
+    <span class="path">skyfall — bash — 80×24</span>
+    <span class="status">● online</span>
+  </div>
+</div>
+
+<nav class="shell-nav" aria-label="Primary">
+  <a href="index.html">home</a>
+  <a href="projects.html" aria-current="page">projects</a>
+  <a href="about.html">about</a>
+  <a href="contact.html">contact</a>
+</nav>
+
+<main>
+  <p class="prompt-line">
+    <span class="user">guest</span><span class="at">@</span><span class="host">skyfall</span><span class="cwd">:~/projects$</span>
+    <span class="cmd">ls -la</span>
+  </p>
+  <h1>Projects<span class="caret"></span></h1>
+  <p class="lede">A working set — systems &amp; graphics, AI/assistants, games, and a couple of things built to pay the bills.</p>
+
+  <h2>systems &amp; graphics</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">cpugpurender<span class="sec">(1)</span></div>
+      <span class="entry-tag">active</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> self-directed software renderer</div>
+    <p>A CPU renderer built for speed, not shortcuts: AVX2 SIMD throughout, a tile-based deferred
+      pipeline, Hi-Z depth culling, and P/E-core-aware CPU affinity to actually use hybrid Intel
+      cores properly. Also ships a hand-rolled x86-64 JIT compiler, a BVH with SAH binning, shadow
+      mapping, normal mapping, and MSAA — benchmarked and iterated pass by pass.</p>
+    <div class="stack"><span>C++</span><span>AVX2/SIMD</span><span>x86-64 ASM</span><span>JIT</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">RAM corruption diagnosis<span class="sec">(8)</span></div>
+      <span class="entry-tag">resolved</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> hardware fault investigation</div>
+    <p>Tracked a recurring crash (Kernel-Power Event 41, Bugcheck 0x1A) back to genuine hardware
+      memory corruption, confirmed with WinDbg dump analysis and a MemTest86 run — not a driver
+      or software red herring.</p>
+    <div class="stack"><span>WinDbg</span><span>MemTest86</span><span>Windows internals</span></div>
+  </div>
+
+  <h2>ai &amp; assistants</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">Aria<span class="sec">(1)</span></div>
+      <span class="entry-tag">active</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> local AI companion / VTuber assistant</div>
+    <p>A fully local voice assistant with a face: a local LLM via Ollama, Whisper for speech
+      recognition, Coqui for TTS, and VTube Studio for lip-synced avatar output — plus an
+      end-to-end LoRA fine-tuning pipeline run on Colab with Unsloth/QLoRA.</p>
+    <div class="stack"><span>Python</span><span>Ollama</span><span>Whisper</span><span>Coqui TTS</span><span>LoRA / QLoRA</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">PDA<span class="sec">(1)</span></div>
+      <span class="entry-tag">active</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> lightweight desktop assistant</div>
+    <p>Aria's lighter spinoff: a Python/C++ hybrid with a PySide6 overlay widget system — music
+      player, activity/speech, and selection widgets — plus skills for YouTube playback (yt-dlp +
+      VLC), local file playback, app launching with a UWP fallback via PowerShell, system stats,
+      and a global media-key listener.</p>
+    <div class="stack"><span>Python</span><span>C++</span><span>PySide6</span><span>yt-dlp / VLC</span></div>
+  </div>
+
+  <h2>games</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">Unity FPS<span class="sec">(6)</span></div>
+      <span class="entry-tag">in progress</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> first-person shooter, built from scratch</div>
+    <p>A combat loop stood up in a single focused session: NavMesh enemies, projectile shooting,
+      per-enemy health bars, a player HUD, win/lose states, hit-flash feedback, bullet trails, and
+      a checkpoint system underway.</p>
+    <div class="stack"><span>Unity</span><span>C#</span><span>NavMesh</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">Dungeon Escape<span class="sec">(6)</span></div>
+      <span class="entry-tag">complete</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> 2D dungeon crawler, academic project</div>
+    <p>16 source files of dungeon crawling — A* pathfinding, procedural map generation, boss
+      mechanics — built with JavaFX/Swing and delivered with a full technical write-up and a
+      22-slide presentation.</p>
+    <div class="stack"><span>Java</span><span>JavaFX/Swing</span><span>A* pathfinding</span></div>
+  </div>
+
+  <h2>ship it</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">Skyfall Player<span class="sec">(1)</span></div>
+      <span class="entry-tag">active</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> personal music app, YouTube-sourced</div>
+    <p>A Flutter music player with real library management: sort/filter, drag-to-reorder,
+      artist/album thumbnails, cookie-based YouTube auth, a home-screen widget (debugged the hard
+      way through ADB logcat), and a Windows desktop build.</p>
+    <div class="stack"><span>Flutter / Dart</span><span>Android widgets</span><span>Windows desktop</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">ClicknPay for WooCommerce<span class="sec">(3)</span></div>
+      <span class="entry-tag">shipped</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> payment gateway integration, client work</div>
+    <p>Wired ClicknPay into ayandile.com as a custom WordPress plugin extending WooCommerce —
+      live, in production, moving real transactions.</p>
+    <div class="stack"><span>PHP</span><span>WordPress</span><span>WooCommerce</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="entry-name">Nyaradzo Records DB<span class="sec">(2)</span></div>
+      <span class="entry-tag">complete</span>
+    </div>
+    <div class="entry-meta"><span class="k">TYPE</span> MS Access database, coursework</div>
+    <p>A records system for a funeral services provider — full VBA procedures, a Level 1 DFD, and
+      a 4-chapter report backing a 22-slide branded presentation.</p>
+    <div class="stack"><span>MS Access</span><span>VBA</span><span>SQL</span></div>
+  </div>
+
+
+</main>
+
+<footer>
+  <span>more on <a href="contact.html">./contact</a></span>
+  <span class="comment">// list truncated — ask about the rest</span>
+</footer>
+
+</body>
+</html>
