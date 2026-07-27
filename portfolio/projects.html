@@ -50,6 +50,7 @@
       cores properly. Also ships a hand-rolled x86-64 JIT compiler, a BVH with SAH binning, shadow
       mapping, normal mapping, and MSAA — benchmarked and iterated pass by pass.</p>
     <div class="stack"><span>C++</span><span>AVX2/SIMD</span><span>x86-64 ASM</span><span>JIT</span></div>
+    <a href="https://github.com/andlskyfallaju/cpugpurender">CPUGPU Renderer</a>
   </div>
 
   <div class="entry">
@@ -71,11 +72,14 @@
       <div class="entry-name">Aria<span class="sec">(1)</span></div>
       <span class="entry-tag">active</span>
     </div>
-    <div class="entry-meta"><span class="k">TYPE</span> local AI companion / VTuber assistant</div>
-    <p>A fully local voice assistant with a face: a local LLM via Ollama, Whisper for speech
-      recognition, Coqui for TTS, and VTube Studio for lip-synced avatar output — plus an
-      end-to-end LoRA fine-tuning pipeline run on Colab with Unsloth/QLoRA.</p>
+    <div class="entry-meta"><span class="k">TYPE</span> Locally Developed Transformer LLM </div>
+    <p>Aria is a custom transformer, architected and trained from the ground up rather than fine-tuned on top of an existing model. 
+      It's built in PyTorch with Hugging Face's training tooling doing the heavy lifting — the point isn't reinventing the plumbing, 
+      it's designing and understanding the architecture itself: attention, feed-forward blocks, the training loop, 
+      all deliberate choices rather than defaults inherited from a pretrained checkpoint. 
+      There's a working model running end to end already, and the current phase is training it further — refining it rather than proving the design works.</p>
     <div class="stack"><span>Python</span><span>Ollama</span><span>Whisper</span><span>Coqui TTS</span><span>LoRA / QLoRA</span></div>
+    <a href="https://github.com/andlskyfallaju/Aria-AI">Aria Ai LLM</a>
   </div>
 
   <div class="entry">
@@ -89,6 +93,7 @@
       VLC), local file playback, app launching with a UWP fallback via PowerShell, system stats,
       and a global media-key listener.</p>
     <div class="stack"><span>Python</span><span>C++</span><span>PySide6</span><span>yt-dlp / VLC</span></div>
+    <a href="https://github.com/andlskyfallaju/Local-PDA-Assistant">PDA Assistant</a>
   </div>
 
   <h2>games</h2>
@@ -103,6 +108,7 @@
       per-enemy health bars, a player HUD, win/lose states, hit-flash feedback, bullet trails, and
       a checkpoint system underway.</p>
     <div class="stack"><span>Unity</span><span>C#</span><span>NavMesh</span></div>
+    <a href="https://github.com/andlskyfallaju/Narrative-FPS">Narrative FPS Shooter</a>
   </div>
 
   <div class="entry">
@@ -115,6 +121,7 @@
       mechanics — built with JavaFX/Swing and delivered with a full technical write-up and a
       22-slide presentation.</p>
     <div class="stack"><span>Java</span><span>JavaFX/Swing</span><span>A* pathfinding</span></div>
+    <a href="https://github.com/andlskyfallaju/DungeonEscape">Java Based Dungeon Escape</a>
   </div>
 
   <h2>ship it</h2>
@@ -124,11 +131,21 @@
       <div class="entry-name">Skyfall Player<span class="sec">(1)</span></div>
       <span class="entry-tag">active</span>
     </div>
-    <div class="entry-meta"><span class="k">TYPE</span> personal music app, YouTube-sourced</div>
+    <div class="entry-meta"><span class="k">TYPE</span> Agricultural Marketplace Application</div>
+    <p>MindaPriceZW is a mobile platform designed to help farmers access real-time agricultural market prices, 
+      weather-based farming advisories, and communicate with other users through an integrated messenger.
+      The application aims to improve agricultural decision-making by combining weather insights, 
+      advisory notifications, and a marketplace system into a single mobile solution.</p>
+    <div class="stack"><span>Flutter / Dart</span><span>Android widgets</span><span>Windows desktop</span></div>
+    <a href="https://github.com/andlskyfallaju/mindaprice-zw-app">Minda Price Frontend</a> <a href="https://github.com/andlskyfallaju/mindaprice-backend">Minda Price Backend</a>
+  </div>
+
+  <div class="entry-meta"><span class="k">TYPE</span> personal music app, YouTube-sourced</div>
     <p>A Flutter music player with real library management: sort/filter, drag-to-reorder,
       artist/album thumbnails, cookie-based YouTube auth, a home-screen widget (debugged the hard
       way through ADB logcat), and a Windows desktop build.</p>
     <div class="stack"><span>Flutter / Dart</span><span>Android widgets</span><span>Windows desktop</span></div>
+    <a href="https://github.com/andlskyfallaju/mindaprice-zw-app">CPUGPU Renderer</a>
   </div>
 
   <div class="entry">
